@@ -32,12 +32,12 @@
 //    NSLog(@"%@",p.list);
     
     
-    NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
-    _p = [[Person alloc]init];
-    [_p addObserver:self forKeyPath:@"list" options:options context:nil];
-    
-    NSLog(@"打印list原来的内存地址：%x",self.p.list);
-    NSLog(@"打印内容:%@",self.p.list);
+//    NSKeyValueObservingOptions options = NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld;
+//    _p = [[Person alloc]init];
+//    [_p addObserver:self forKeyPath:@"list" options:options context:nil];
+//
+//    NSLog(@"打印list原来的内存地址：%x",self.p.list);
+//    NSLog(@"打印内容:%@",self.p.list);
     
     //setValuesForKeysWithDictionary
 //    Student *stu = [[Student alloc]init];
@@ -50,9 +50,9 @@
 //    [stu setValuesForKeysWithDictionary:dic];
     
     //异常处理
-//    Student *stu = [[Student alloc]init];
-//    [stu setValue:@"12304672587213" forKey:@"number"];
-//    [stu setValue:nil forKey:@"age"];
+    Student *stu = [[Student alloc]init];
+    [stu setValue:@"12304672587213" forKey:@"number"];
+    [stu setValue:nil forKey:@"age"];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
